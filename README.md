@@ -20,7 +20,7 @@ Then, calculate the morphological wavelet transform in moving and fixed image fo
 [C1, S1] = QLiftDec3MinMaxMin(moving,para.levels);
 ```
 
-Lastly, calculate the displacement based on the decomposition. A set of example parameters can be found in ```run_morph.m```
+Lastly, calculate the displacement based on the decomposition. A set of example parameters can be found in ```run_morph.m```. WARNING: Currently, only minmaxmin is implemented.
 
 ```matlab    
 [u, v, w] = morph_tvl1_of(C0, S0, C1, S1, para);
